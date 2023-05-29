@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gestiune_buguri.controllers.LogInController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="237.0" layoutY="90.0" prefHeight="46.0" prefWidth="125.0" text="Autentificare" textAlignment="CENTER" textFill="#050505">
+         <font>
+            <Font name="Webdings" size="22.0" />
+         </font></Label>
+      <TextField fx:id="usernameTextField" alignment="CENTER" layoutX="225.0" layoutY="150.0" promptText="username" />
+      <PasswordField fx:id="passwordTextField" alignment="CENTER" layoutX="226.0" layoutY="187.0" promptText="password" />
+      <TextField fx:id="functieTextField" alignment="CENTER" layoutX="226.0" layoutY="225.0" promptText="functie" />
+      <Button fx:id="logInButton" layoutX="276.0" layoutY="266.0" mnemonicParsing="false" onAction="#onLogInButtonClick" text="Log In">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.4421052634716034" green="0.43719297647476196" blue="0.43719297647476196" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>

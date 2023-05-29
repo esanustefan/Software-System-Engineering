@@ -1,0 +1,6 @@
+rootProject.name = "Gestiune_Buguri"
+include 'BugClientFX'
+include 'BugService'
+include 'BugPersistence'
+include 'BugModel'
+

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="684.0" prefWidth="1036.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.TesterController">
+   <children>
+      <TableView fx:id="tableBug" layoutX="18.0" layoutY="72.0" prefHeight="390.0" prefWidth="982.0">
+        <columns>
+          <TableColumn fx:id="columnDenumire" prefWidth="268.8000297546387" text="Denumire" />
+          <TableColumn fx:id="columnDescriere" prefWidth="379.9999694824219" text="Descriere" />
+            <TableColumn fx:id="columnGradRisc" prefWidth="164.80010986328125" text="Nivel de Prioritate " />
+            <TableColumn fx:id="columnStatus" prefWidth="168.0" text="Status" />
+        </columns>
+      </TableView>
+      <TextField fx:id="denumireTextField" layoutX="98.0" layoutY="476.0" prefHeight="26.0" prefWidth="112.0" promptText="denumire" />
+      <TextField fx:id="descriereTextField" layoutX="98.0" layoutY="512.0" prefHeight="26.0" prefWidth="112.0" promptText="descriere" />
+      <Button fx:id="adaugaBugButton" layoutX="113.0" layoutY="582.0" mnemonicParsing="false" onAction="#onAdaugaBugClick" text="Adauga bug" />
+      <ComboBox fx:id="comboBoxGradRisc" layoutX="98.0" layoutY="548.0" opacity="0.79" prefHeight="26.0" prefWidth="112.0" promptText="grad risc" />
+      <Button fx:id="logoutButton" layoutX="902.0" layoutY="1.0" mnemonicParsing="false" onAction="#onLogoutButtonClick" text="Logout" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="680.0" layoutY="476.0" lineSpacing="1.0" prefHeight="26.0" prefWidth="222.0" text="Doriti sa stergeti bug-ul selectat ?" textAlignment="CENTER" />
+      <CheckBox fx:id="checkBoxDa" layoutX="773.0" layoutY="517.0" mnemonicParsing="false" onAction="#onCheckBoxDaClicked" text="Da" />
+      <Button fx:id="stergereBugButton" layoutX="754.0" layoutY="549.0" mnemonicParsing="false" onAction="#onStergereBugButtonClicked" text="Sterge bug" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="416.0" layoutY="23.0" lineSpacing="1.0" prefHeight="26.0" prefWidth="85.0" text="Sorteaza :" textAlignment="CENTER" />
+      <CheckBox fx:id="checkboxCrescator" layoutX="508.0" layoutY="14.0" mnemonicParsing="false" onAction="#onSelectCrescator" prefHeight="18.0" prefWidth="77.0" text="Crescator" />
+      <CheckBox fx:id="checkboxDescrescator" layoutX="508.0" layoutY="36.0" mnemonicParsing="false" onAction="#onSelectDescrescator" prefHeight="18.0" prefWidth="94.0" text="Descrescator" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gestiune_buguri.controllers.ProgramatorController">
+   <children>
+      <TableView layoutX="51.0" layoutY="32.0" prefHeight="200.0" prefWidth="498.0">
+         <columns>
+            <TableColumn prefWidth="84.0" text="Denumire" />
+            <TableColumn prefWidth="135.199951171875" text="Descriere" />
+            <TableColumn prefWidth="63.20001220703125" text="Grad risc" />
+            <TableColumn prefWidth="76.79998779296875" text="Status" />
+            <TableColumn prefWidth="140.0" text="Programator" />
+         </columns>
+      </TableView>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="196.0" layoutY="317.0" lineSpacing="1.0" prefHeight="26.0" prefWidth="207.0" text="Sigur doresti sa stergi bug-ul selectat?" textAlignment="CENTER" />
+      <CheckBox fx:id="checkboxDa" layoutX="223.0" layoutY="352.0" mnemonicParsing="false" onAction="#onSelectDa" text="Da" />
+      <CheckBox fx:id="checkboxDa1" layoutX="330.0" layoutY="352.0" mnemonicParsing="false" onAction="#onSelectDa" text="Nu" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="94.0" layoutY="248.0" lineSpacing="1.0" prefHeight="26.0" prefWidth="389.0" text="Cum doresti sa se efectueze filtrarea dupa grad de risc a bug-urilor?" textAlignment="CENTER" />
+      <CheckBox fx:id="checkboxDa2" layoutX="203.0" layoutY="274.0" mnemonicParsing="false" onAction="#onSelectDa" prefHeight="18.0" prefWidth="77.0" text="Crescator" />
+      <CheckBox fx:id="checkboxDa3" layoutX="302.0" layoutY="274.0" mnemonicParsing="false" onAction="#onSelectDa" prefHeight="18.0" prefWidth="94.0" text="Descrescator" />
+   </children>
+</AnchorPane>

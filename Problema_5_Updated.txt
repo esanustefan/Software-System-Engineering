@@ -1,0 +1,12 @@
+O firma producatoare de software pune la dispozitia programatorilor si verificatorilor sai un sistem 
+prin care acestia pot sa comunice electronic. Astfel, fiecare dintre angajatii mentionati are la dispoziție 
+un terminal prin care: 
+
+• o fereastra de logare, in care angajatul trebuie sa isi introduca un username, parola, si functia sa(verificator/programator)[pot introduce forgot pssword daca chiar e nevoie sa mai adaug ceva], pe urma deschizandu-se o fereastra de tester/programator (daca are un rang mai mare in firma poate fi si tester si programator SAU exista un sef).
+
+• testerul poate înregistra un bug, dându-i o denumire si o descriere, si un nivel de risc(1,2,...,10). Imediat dupa înregistrarea bug-ului, toti programatorii logati in acelasi moment in cadrul sistemului vad lista bug-urilor actualizata cu obiectul nou introdus. (poate sa asigneze direct unui programator un bug)
+
+• programatorul vizualizeaza lista bug-urilor; de asemenea, programatorul poate selecta un bug din lista si poate declansa un buton prin care declara ca bug-ul a fost eliminat, caz în care bug-ul este scos din lista tuturor programatorilor. O conditie speciala este ca programatorul poate sterge doar bug-urile care au nivel de risc maxim (daca sunt mai multe de acelasi risc, se poate sterge oricare bug cu risc maxim); in schimb daca selecteaza un bag care nu indeplineste aceasta conditie, ii va aparea un warning pentru a-l atentiona ca nu sterge un bug cu risc maxim.
+
+--> intre cei 2 actori (tester si programator) pot sa am relatie doar de generalizare, celelelalte relatii (include,extend...) sunt intre use case-uri.
+--> de facut repository pe github (public) si incarcam diagramele facute + documentul cu descrierea cazurilor de utilizare

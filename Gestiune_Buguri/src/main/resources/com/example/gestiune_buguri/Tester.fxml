@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gestiune_buguri.controllers.TesterController">
+   <children>
+      <TableView layoutX="64.0" layoutY="22.0" prefHeight="200.0" prefWidth="470.0">
+        <columns>
+          <TableColumn prefWidth="84.0" text="Denumire" />
+          <TableColumn prefWidth="120.0" text="Descriere" />
+            <TableColumn prefWidth="61.5999755859375" text="Grad risc" />
+            <TableColumn prefWidth="75.199951171875" text="Status" />
+            <TableColumn prefWidth="129.60003662109375" text="Programator" />
+        </columns>
+      </TableView>
+      <TextField fx:id="denumireTextField" layoutX="64.0" layoutY="242.0" prefHeight="26.0" prefWidth="112.0" promptText="denumire" />
+      <TextField fx:id="descriereTextField" layoutX="64.0" layoutY="275.0" prefHeight="26.0" prefWidth="112.0" promptText="descriere" />
+      <TextField fx:id="gradRiscTextField" layoutX="64.0" layoutY="311.0" prefHeight="26.0" prefWidth="112.0" promptText="grad risc (1 - 10)" />
+      <Button fx:id="adaugaBugButton" layoutX="79.0" layoutY="347.0" mnemonicParsing="false" onAction="#onAdaugaBugClick" text="Adauga bug" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="251.0" layoutY="242.0" lineSpacing="1.0" prefHeight="26.0" prefWidth="282.0" text="Doresti sa atribui un bug unui anumit programator?" textAlignment="CENTER" />
+      <TextField fx:id="usernameProgramatorTextField" disable="true" layoutX="323.0" layoutY="311.0" prefHeight="26.0" prefWidth="138.0" promptText="username programator" />
+      <CheckBox fx:id="checkboxDa" layoutX="373.0" layoutY="279.0" mnemonicParsing="false" onAction="#onSelectDa" text="Da" />
+   </children>
+</AnchorPane>
